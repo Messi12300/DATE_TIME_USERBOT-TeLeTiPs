@@ -36,7 +36,7 @@ async def main_teletips():
                 Image_font_teletips = ImageFont.truetype("ds-digit.ttf", 360)
                 Image_text_teletips = f"{Time_teletips}"
                 Image_edit_teletips = ImageDraw.Draw(Image_teletips)
-                Image_edit_teletips.text((990, 850), Image_text_teletips, (0, 355, 355), font = Image_font_teletips)
+                Image_edit_teletips.text((1990, 850), Image_text_teletips, (0, 355, 355), font = Image_font_teletips)
                 Image_teletips.save("Image_final_teletips.jpg")
                 await Date_Time_Userbot_teletips.update_profile(bio = f"{Emojis_teletips} {Quotes_teletips}" , last_name = f"| ⏰ {Time_teletips} | 📅 {Date_teletips}")
                 await Date_Time_Userbot_teletips.set_profile_photo(photo="Image_final_teletips.jpg")
