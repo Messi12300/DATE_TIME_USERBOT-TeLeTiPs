@@ -8,25 +8,25 @@ session_name = os.environ["SESSION_NAME"]
 BOT_TOKEN = environ.get("BOT_TOKEN")
 TIME = int(environ.get("1800"))
 GROUPS = []
-for grp in environ.get("GROUPS").split():
+for grp in environ.get("-1001530674974").split():
     GROUPS.append(int(grp))
 ADMINS = []
-for usr in environ.get("ADMINS").split():
+for usr in environ.get("1154056577").split():
     ADMINS.append(int(usr))
 
 START_MSG = "<b>Hai {},\nI'm a simple bot to delete group messages after a specific time</b>"
 
 
 User = Client(session_name=SESSION,
-              api_id=API_ID,
-              api_hash=API_HASH,
+              api_id=api_id,
+              api_hash=api_hash,
               workers=300
               )
 
 
 Bot = Client(session_name="auto-delete",
-             api_id=API_ID,
-             api_hash=API_HASH,
+             api_id=api_id,
+             api_hash=api_id,
              bot_token=BOT_TOKEN,
              workers=300
              )
